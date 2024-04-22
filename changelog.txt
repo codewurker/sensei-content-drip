@@ -1,0 +1,87 @@
+*** Sensei Content Drip Changelog ***
+
+2021.10.19 - version 2.1.1
+Fix: Can't remove the lesson access from user if already has one - #227
+Fix: Lessons that are in a module are not available in Manual Content Drip meta box - #217
+
+2020.12.03 - version 2.1.0
+* New: Adds partial French translations - #213
+* Tweak: Use WordPress' timezone when dripping lessons - #214
+* Fix: Minor display issue in WordPress admin on the lesson editor - #201
+
+2020.03.26 - version 2.0.2
+* Tweak: Switch to new methods to check enrolment when possible - #193, #192
+* Fix: Bug causing admin users to be unable to view courses - #187
+
+2019.12.04 - version 2.0.1
+* Tweak: Update verbiage in drip email - #170
+* Fix: Lesson order in drip email - #172
+* Fix: Hide comments when lesson has not dripped - #173
+
+2019.03.25 - version 2.0.0
+* New: Add dependency check for minimum Sensei (1.11.0) and PHP (5.6) versions - #146, #151, #156, #163
+* New: Extract drip email to a template file - #155
+* New: Add support for WP 4.8 multisite capabilities - #127
+* New: Update Russian translation (@AiratHalitov) - #141
+* Tweak: Use date format from WordPress settings for the displayed drip date - #150
+* Tweak: Schedule emails to be sent at 00:30 in the server's timezone - #149
+* Tweak: Check dependencies and perform the majority of plugin loading tasks after other plugins have loaded - #160
+* Tweak: Update plugin header - #143
+* Tweak: Use Woo header for plugin updates - #147
+* Fix: Enable translating "Give Access" and "Remove Access" button text - #157
+* Fix: Replace call to deprecated `create_function` function - #161
+* Fix: PHP notice when drip emails are sent - #153
+* Fix: PHP notice when test emails are sent - #132
+* Fix: HTML escaping non-string values - #148
+
+2018.05.10 - version 1.0.9
+* Fix access issue for undripped content
+* Add Russian translations
+
+2017.02.15 - version 1.0.8
+* Fix JavaScript error on lesson admin
+
+2017.02.08 - version 1.0.7
+* Users can disable Email notifications in Settings.
+* Admin: only accept YYYY-MM-DD drip dates, mitigates certain issues
+  with time formats in non-English languages
+* Users can send test emails to themselves from the lesson edit admin screen
+* Check for translations before defaulting to settings strings for drip messages
+* Various fixes and security improvements
+
+2016.11.29 - version 1.0.6
+* Fix - Time Formatting changes Causing Errors
+* Fix - Video and buttons hidden after completing lesson
+* Fix - Errors when loading lesson protected by Content Drip
+* Fix - Restrict access to Quizzes and Media attachments
+* Fix - Prevent multiple content drip emails from being sent
+* Various Fixes and improvements
+
+2016.04.20 - version 1.0.5
+* Fix - Ensure lesson video and meta can still be viewed after completing a lesson.
+* New - Added a .pot file to enable translation.
+
+2016.02.02 - version 1.0.4
+* Fix - Makes sure the auto-excert is not displayed if the lesson has not dripped
+* Tweak - Ensures compatibility with Sensei 1.9
+
+2015.06.10 - version 1.0.3
+* Tweak - replace deprecated post query 'numberofposts' argument with 'posts_per_page'
+* Tweak -  add filters for the email subject, heading and greeting
+* Fix - Widen the number input for the time units after course start option
+* Fix - Email lesson list order was random and not as set by admin.
+
+2015.02.25 - version 1.0.2
+* Tweak - use the WordPress date format when displaying the drip date notification
+* Fix - The dynamic drip now uses the 'start' comment meta on the sensei_course_status since Sensei 1.7.0
+* Fix - remove the error notice on the single lesson page when a lesson has no course
+
+2015.01.31 - version 1.0.1
+* tweak - change the data queries to be compatible with sensei 1.7.0
+* tweak - apply the content access block on quizzes as well
+* Fix - load WordPress localized dates instead of standard date
+* Fix - Remove the un needed frontend javascript file
+* Tweak - Add jquery data picker for cross browser support
+
+2014.10.26 - version 1.0.0
+* First release
